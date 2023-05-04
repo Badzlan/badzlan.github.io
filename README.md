@@ -1,2 +1,2 @@
-# badzlan.github.io
+# badzlan.is-a.dev
 Portfolio Website

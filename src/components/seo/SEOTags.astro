@@ -15,8 +15,8 @@ const DEFAULT_URL_SITE = SITE_URL;
 const openGraph = {
   title: title || og?.title || DEFAULT_TITLE_PAGE,
   type: og?.type || "website",
-  image: og?.image || "/opengraph-image.jpg",
-  alt: og?.alt || "astro portfolio template image",
+  image: og?.image || "/profile.jpg",
+  alt: og?.alt || "badzlan's portfolio image",
   url: DEFAULT_URL_SITE,
   description: og?.description || DEFAULT_DESCRIPTION_PAGE,
 };
@@ -39,12 +39,12 @@ const openGraph = {
       },
     }}
     twitter={{
-      creator: "@itsstormzz_",
+      creator: "@badzlan_",
     }}
     extend={{
       link: [
-        { rel: "icon", href: "/favicon.svg" },
-        { rel: "sitemap", href: "/sitemap-index.xml" },
+        { rel: "icon", href: "/logo.png" },
+        { rel: "sitemap", href: "/sitemap-in dex.xml" },
       ],
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -56,7 +56,7 @@ const openGraph = {
         { name: "twitter:card", content: "summary_large_image" },
         { name: "twitter:title", content: openGraph.title },
         { name: "twitter:description", content: openGraph.description },
-        { name: "twitter:site", content: "@itsstormzz_" },
+        { name: "twitter:site", content: "@badzlan_" },
       ],
     }}
   />

@@ -25,7 +25,7 @@ const openGraph = {
 <head>
   <SEO
     charset="UTF-8"
-    title={title || DEFAULT_TITLE_PAGE}
+    title={ title ? `${DEFAULT_TITLE_PAGE} | ${title}` : DEFAULT_TITLE_PAGE}
     description={description || DEFAULT_DESCRIPTION_PAGE}
     noindex={noindex || false}
     openGraph={{

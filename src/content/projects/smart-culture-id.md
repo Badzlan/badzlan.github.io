@@ -1,9 +1,11 @@
 ---
-title: "The Power Of React Hooks"
-publishedAt: 2023-05-24
-description: "Lorem ipsum dolor sit amet consectetur et ultrices blandit neque ege"
-slug: "the-power-of-react-hooks"
+slug: "smart-culture-id"
+title: "Smart Culture ID"
+description: "Smart Platform for Indonesian Culture from I/O Fest Project Competition."
+tech: "NextJs"
+date: 2023-04-15
 isPublish: true
+isPinned: true
 ---
 
 ## Vocesque meum remis est neque Neptunus monte

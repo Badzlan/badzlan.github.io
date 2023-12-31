@@ -21,7 +21,7 @@ const achievements: Achievement[] = [
     certificate: "https://drive.google.com/file/d/1-qYHgI4XbB7-9AASFFYl1gW2gNya_kYT/view",
   },
   {
-    title: "Grand Finalist at Software Dev and Logical Competition",
+    title: "Grand Finalist at Software Development Competition",
     issuer: "Binus University",
     certificate: "/",
   },

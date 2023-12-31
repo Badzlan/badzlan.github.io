@@ -16,7 +16,7 @@ const presentation: Presentation = {
   title: "Hi, I’m Badzlan 👋",
   profile: "/profile.jpg",
   description:
-  "Hello, i'm *Badzlan Nur Dhabith* a Software Engineer with over *1 years* of Back-end experience. I am currently working as *Back-end Engineer* at Smarteschool. Outside of work, I also learn *Cyber Security* and *Project Management*.",
+  "Hello, i'm *Badzlan Nur Dhabith* a Software Engineer with over *1 years* of Back-end experience. I am currently intern as *Full-stack Developer* at Smarteschool. Outside of work, I also learn *Project Management*.",
   socials: [
     {
       label: "GitHub",
@@ -24,7 +24,7 @@ const presentation: Presentation = {
     },
     {
       label: "LinkedIn",
-      link: "https://linkedin.com/in/badzlannurdhabith/",
+      link: "https://linkedin.com/in/badzlannurdhabith",
     },
     {
       label: "Bento",

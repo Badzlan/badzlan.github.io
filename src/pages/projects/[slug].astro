@@ -4,29 +4,29 @@ import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("projects");
+  const projects = await getCollection("projects");
 
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: { post },
+  return projects.map((project) => ({
+    params: { slug: project.slug },
+    props: { project },
   }));
 }
 
 type Props = {
-  post: CollectionEntry<"posts">;
+  project: CollectionEntry<"projects">;
 };
 
-const { post } = Astro.props;
-const { Content } = await post.render();
+const { project } = Astro.props;
+const { Content } = await project.render();
 ---
 
-<Layout title={post.data.title} description={post.data.description}>
-  <main class="post mx-auto flex w-full max-w-prose flex-col gap-4">
+<Layout title={project.data.title} description={project.data.description}>
+  <main class="project mx-auto flex w-full max-w-prose flex-col gap-4">
     <header role="presentation">
       <h1 class="text-md">
-        {post.data.title} - {formatDate(post.data.publishedAt)}
+        {project.data.title} - {formatDate(project.data.date)}
       </h1>
-      <p class="italic">{post.data.description}</p>
+      <p class="italic">{project.data.description}</p>
     </header>
 
     <Content />

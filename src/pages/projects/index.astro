@@ -3,11 +3,6 @@ import { getCollection } from "astro:content";
 import Layout from "@/layouts/Layout.astro";
 import formatDate from "@/utils/formatDate";
 
-const posts = (await getCollection("posts")).sort(function (first, second) {
-  return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
-});
-
-// const projects = await getCollection("projects")
 
 const projects = (await getCollection("projects")).sort(function (first, second) {
   return second.data.date.getTime() - first.data.date.getTime();
@@ -20,16 +15,16 @@ const projects = (await getCollection("projects")).sort(function (first, second)
 
     <article class="flex flex-col gap-4">
       {
-      projects.map((post) => (
+      projects.map((project) => (
           <a
             class="group flex flex-col gap-2 border-t border-neutral-700 py-4 transition-all hover:text-neutral-100"
-            href={`/projects/${post.slug}`}
+            href={`/projects/${project.slug}`}
           >
             <div class="flex w-full items-center justify-between">
-              <h2 class="text-lg">{post.data.title}</h2>
+              <h2 class="text-lg">{project.data.title}</h2>
 
               <div class="flex flex-row items-center gap-4">
-                <p>{formatDate(post.data.date)}</p>
+                <p>{formatDate(project.data.date)}</p>
                 <svg
                   width="18"
                   height="18"
@@ -52,7 +47,7 @@ const projects = (await getCollection("projects")).sort(function (first, second)
                 </svg>
               </div>
             </div>
-            <p>{post.data.description}</p>
+            <p>{project.data.description}</p>
           </a>
         ))
       }
